@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family:;
+}
+
+p {
+    color: aliceblue;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    justify-content: space-between; 
+    margin: 15px 0 7px;
+    margin-left: 20px;
+}
+
+.botao {
+    margin: 0 auto;
+    margin-left: 100px;
+}
+
+.hero {
+    display: grid;
+    margin: auto;
+    padding: auto;
+    background-color:black;
+}
+
+.image-hero {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    justify-content: space-between;
+    border-radius: 100px;
+
+}
+
+#grid-container {
+}
