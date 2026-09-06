@@ -9,15 +9,15 @@
     --cor-secundaria-textos: #ffffff; 
     --fundo-alternativo: #fff3ef;
     --cor-botao: #b4aaa3;
-    --fonte-padrao: /* incluir */;
+    --fonte-padrao: "Poppins", sans-serif;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 500px 1fr;
+    grid-template-rows: 350px 1fr;
     margin: 0 auto;
-    gap: 15px;
+    gap: 20px;
     max-width: 1140px;
     padding: 70px;
     background-color: var(--cor-principal-textos-destaque);
@@ -30,18 +30,19 @@
     grid-area: hero;
     width: 100%;
     object-fit: cover;
-    height: 500px;
+    height: 350px;
 }
 
 p {
     color: var(--cor-secundaria-textos);
+    font-family: var(--fonte-padrao);
 }
 
 button {
     background-color: var(--cor-botao);
     padding: 10px 40px;
-    border-radius: 30px;
-    font-family: ar;
+    border-radius: 20px;
+    font-family: var(--fonte-padrao);
     font-size: 16px;
     cursor: pointer;
     margin: 15px 0;
@@ -67,12 +68,22 @@ button {
     border-radius: 7px;
 }
 
-.section_2 {
-    width: 100%;
+.gallery_paisage {
+    background-color: var(--fundo-alternativo);
+    padding: 70px 40px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, 300px); 
 }
 
-.gallery_2 {
-    max-width: ;
-    margin: 0 auto;
-    padding: 0 20px;
+.sea01 { grid-row: 1/2; }
+.sea02 { grid-row: 2/3; }
+.sea03 { grid-row: 1/3; }
+
+.gallery_paisage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
 }
