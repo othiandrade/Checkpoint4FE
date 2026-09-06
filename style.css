@@ -15,13 +15,11 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 500px 1fr;
     margin: 0 auto;
-    height: 900px;
-    gap: 50px;
+    gap: 15px;
     max-width: 1140px;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding: 70px;
     background-color: var(--cor-principal-textos-destaque);
     grid-template-areas: 
     "hero hero"
@@ -41,27 +39,40 @@ p {
 
 button {
     background-color: var(--cor-botao);
-    padding: 10px;
-    border: 10px;
-    border-radius: 20px;
-    color: white;
+    padding: 10px 40px;
+    border-radius: 30px;
     font-family: ar;
-    font-size: 15px;
+    font-size: 16px;
     cursor: pointer;
+    margin: 15px 0;
 }
 
 .text_button {
     grid-area: text_button;
+    margin: 10px;
 }
 
 .gallery {
     grid-area: gallery;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 180px);
+    gap: 20px;
 }
 
 .gallery img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 7px;
+}
+
+.section_2 {
+    width: 100%;
+}
+
+.gallery_2 {
+    max-width: ;
+    margin: 0 auto;
+    padding: 0 20px;
 }
